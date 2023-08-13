@@ -1,0 +1,19 @@
+.tours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    h1{
+        color: #fff;
+        &::after{
+            content: '';
+            display: block;
+            width: 80%;
+            height: 3px;
+            background-color: lightskyblue;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+    }
+}

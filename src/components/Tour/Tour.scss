@@ -1,0 +1,108 @@
+@import '../../responsive.scss';
+
+.tour{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        color: #000;
+        margin: 20px;
+        overflow: hidden;
+        @include sm{
+            width: 50%;
+        }
+        @include md{
+            width: 50%;
+        }
+
+        .top{
+            padding: 0;
+            margin: 0;
+            img{
+                width: 100%;
+                height: 310px;
+                object-fit: cover;
+            }
+
+        }
+        .bottom{
+            transform: translateY(-10%);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            
+            
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                span{
+                    background-color: rgba(0, 138, 138 , 0.3);
+                    font-weight: bold;
+                    font-size: 16px;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+
+            .info{
+
+                
+                p{
+                    width: 600px;
+
+                    @include sm{
+                        width: 50%;
+                    }
+                }
+                button{
+                    color: rgb(63, 63, 114);
+                    text-decoration: underline;
+                    font-size: 14px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+    
+            }
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include sm{
+                    width: 50%;
+                }
+                
+                button{
+                    transition: 0.4s all ease-in-out;
+                    padding: 10px;
+                    width: 150px;
+                    border: 1px solid #000;
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border-radius: 5px;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+    }
+}
